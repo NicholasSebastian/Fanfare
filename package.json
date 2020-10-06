@@ -22,5 +22,10 @@
     "@types/react-native": "~0.63.2",
     "typescript": "~3.9.5"
   },
-  "private": true
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicholasSebastian/Fanfare.git"
+  },
+  "author": "Nicholas Sebastian Hendrata"
 }
