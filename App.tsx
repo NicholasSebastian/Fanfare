@@ -1,21 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, useWindowDimensions } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+
+import Layout from './src/pages/overview/layout';
+
+const aspectRatio = { width: 9, height: 16 };
+const { width, height } = useWindowDimensions();
+
+const expectedHeight = (width / aspectRatio.width) * aspectRatio.height;
+// if (height > expected height) ;
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={{flex: 1, backgroundColor: '#000'}}>
+      <StatusBar style="light" />
+      <Layout />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
