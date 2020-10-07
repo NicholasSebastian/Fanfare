@@ -23,7 +23,10 @@ export default function Layout() {
     return (
         <View style={{flex: 1}}>
             <Header />
-                <View style={{flex: 8}}>
+                <View style={{
+                    flex: 1,
+                    backgroundColor: 'darkblue'
+                }}>
                 {content[page]}
                 </View>
             <BottomNav setPage={setPage} />

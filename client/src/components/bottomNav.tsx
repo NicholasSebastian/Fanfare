@@ -35,7 +35,7 @@ export default function BottomNav({ setPage }: navProps) {
 
 const styles = StyleSheet.create({
     nav: {
-        flex: 1,
+        height: 80,
         flexDirection: 'row',
         justifyContent: 'space-evenly',
         paddingTop: 10,
