@@ -23,9 +23,5 @@
     "typescript": "~3.9.5"
   },
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NicholasSebastian/Fanfare.git"
-  },
   "author": "Nicholas Sebastian Hendrata"
 }
