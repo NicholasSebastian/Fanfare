@@ -9,6 +9,7 @@ import Home from './home';
 import Characters from './characters';
 import Summons from './summons';
 import Shops from './shops';
+import Others from './others';
 
 export default function Layout() {
     const [page, setPage] = useState<number>(0);
@@ -17,7 +18,8 @@ export default function Layout() {
         <Home />,
         <Characters />,
         <Summons />,
-        <Shops />
+        <Shops />,
+        <Others />
     ];
 
     return (
